@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { SearchRoutingModule } from './search-routing.module';
 import { SearchComponent } from './search.component';
-import { DetailsComponent } from './details/details.component';
+import { DetailsComponent } from './components/details/details.component';
 import { ListComponent } from './components/list/list.component';
 
 
