@@ -5,6 +5,9 @@ import { SearchRoutingModule } from './search-routing.module';
 import { SearchComponent } from './search.component';
 import { DetailsComponent } from './components/details/details.component';
 import { ListComponent } from './components/list/list.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PaginationModule } from 'ngx-bootstrap/pagination';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 
 
 @NgModule({
@@ -15,7 +18,11 @@ import { ListComponent } from './components/list/list.component';
   ],
   imports: [
     CommonModule,
-    SearchRoutingModule
+    SearchRoutingModule,
+    ReactiveFormsModule,
+    FormsModule,
+    PaginationModule,
+    BsDropdownModule
   ]
 })
 export class SearchModule { }

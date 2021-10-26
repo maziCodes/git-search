@@ -1,12 +1,12 @@
 
 <section class="container">
     <div class="d-flex flex-wrap justify-content-center mt-5">
-        <form class="d-flex w-75">
-            <input class="form-control me-2" type="search" placeholder="Search Github" aria-label="Search">
+        <form [formGroup]="form" (ngSubmit)="search()" class="d-flex w-75">
+            <input class="form-control me-2" placeholder="Search Users" formControlName="search" type="search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
         <div class="w-75 mt-4">
-            <app-list></app-list>
+            <app-list [users]="users" [totalCount]="totalCount" (onPageChanged)="pageChanged($event)"></app-list>
         </div>
 
     </div>
